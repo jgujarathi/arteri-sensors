@@ -1,4 +1,4 @@
-*
+/*
  * Playground Pulse PPG Sensor Data Collection for PTT Calculation
  * For Arduino MKRZero
  * 

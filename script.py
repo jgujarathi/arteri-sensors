@@ -53,7 +53,7 @@ class PTTCalculator:
         
         self.collection_count += 1
         timestamp_str = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename_base = f"collection_{self.collection_count}_{timestamp_str}"
+        filename_base = f"collection_{timestamp_str}"
         
         # Convert data to numpy arrays
         timestamps = np.array(self.timestamps)
