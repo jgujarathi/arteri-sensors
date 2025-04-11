@@ -83,7 +83,7 @@ class PTTCalculator:
             for i in range(min_peaks):
                 # Calculate time difference between corresponding peaks
                 # Assuming first sensor is closer to the heart
-                ptt = timestamps_filtered[ppg2_peaks[i]] - timestamps_filtered[ppg1_peaks[i]]
+                ptt = abs(timestamps_filtered[ppg2_peaks[i]] - timestamps_filtered[ppg1_peaks[i]])
                 
                 # Only add valid PTT values (positive and reasonable)
                 if 0 < ptt < 300:  # PTT typically less than 300ms
